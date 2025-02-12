@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Boxes</title>
+    <style>
+        header {
+            background-color: #3498db; /* Blue background for header */
+            color: white; /* White text */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: #f49696;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(198, 57, 57, 0.2);
+            text-decoration: none; /* Remove underline from links */
+            color: black; /* Default text color */
+            cursor: pointer; /* Show pointer on hover */
+            transition: transform 0.2s ease; /* Smooth transformation */
+        }
+
+        .box:hover {
+            transform: scale(1.05); /* Slightly enlarge box on hover */
+        }
+
+        .box h2 {
+            margin: 0;
+        }
+        footer {
+            background-color: #5181b2; /* Dark background for footer */
+            color: white; /* White text */
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to  Doctorly!!</h1>
+    </header>
+
+    <div class="container">
+        <a href="https://example.com/box1" class="box">
+            <h2>Book Appoinment</h2>
+        </a>
+        <a href="https://example.com/box2" class="box">
+            <h2>View Appoinment</h2>
+        </a>
+        <a href="https://example.com/box3" class="box">
+            <h2>About Us</h2>
+        </a>
+    </div>
+
+    <footer>
+        <p><h2></h2>Your doctor at your fingertips</p></footer><h2>
+    </footer>
+
+</body>
+</html>
